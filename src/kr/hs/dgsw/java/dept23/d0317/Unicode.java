@@ -14,8 +14,8 @@ public class Unicode {
     public void printChar() {
         while(true) {
             System.out.print("Write : ");
-            int value = scanner.nextInt();
-            char chValue = changeChar(value);
+            long value = scanner.nextLong();
+            char chValue = changeChar((int)value);
 
             if(value == -1) {
                 System.out.println("Program close");
